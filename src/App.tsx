@@ -2,10 +2,11 @@ import { useState } from 'react'
 import './App.css'
 import AddTodoItem from './components/AddTodoItem'
 import useTodoItemStorage from './hooks/useTodoItemStorage'
+import ListTodoItems from './components/ListTodoItems';
 
 function App() {
   const [showAddItem, setShowAddItem] = useState(false);
-  const { addTodoItem } = useTodoItemStorage();
+  const { items, addTodoItem } = useTodoItemStorage();
   return (
     <>
       <h1>TOBOO</h1>
@@ -14,6 +15,7 @@ function App() {
       <button onClick={() => setShowAddItem(!showAddItem)}>Add Item</button>
         {showAddItem && <AddTodoItem onSave={addTodoItem} />}
       
+      <ListTodoItems items={items} />
     </>
   )
 }
