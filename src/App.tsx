@@ -2,17 +2,31 @@ import { useState } from 'react'
 import AddTodoItem from './components/AddTodoItem'
 import useTodoItemStorage from './hooks/useTodoItemStorage'
 import ListTodoItems from './components/ListTodoItems';
+import Separator from './components/Separator';
 
 function App() {
   const [showAddItem, setShowAddItem] = useState(false);
   const { items, addTodoItem } = useTodoItemStorage();
   return (
-    <div className='container mx-auto'>
-      <h1>ToBoo</h1>
-      <h3>Welcome to the (haunted) TODO List App</h3>
+    <div className='container space-y-4 mx-auto mt-16'>
+      
+      <header>
+        <h1 className='text-3xl font-bold'>ToBoo</h1>
+        <h3 className='text-slate-200'>Welcome to the (haunted) TODO List App</h3>
+      </header>
 
-      <button onClick={() => setShowAddItem(!showAddItem)}>Add Item</button>
-        {showAddItem && <AddTodoItem onSave={addTodoItem} />}
+      <Separator></Separator>
+
+      <button className='flex items-center space-x-2 group' onClick={() => setShowAddItem(!showAddItem)}>
+        <div className='bg-pink-600 p-[2px] rounded-lg group-hover:bg-pink-500'>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+        </div>
+        <span className='text-slate-200 group-hover:text-slate-100'>Add Item</span>
+      </button>
+
+      {showAddItem && <AddTodoItem onSave={addTodoItem} />}
+      
+      <Separator></Separator>
       
       <ListTodoItems items={items} />
     </div>
