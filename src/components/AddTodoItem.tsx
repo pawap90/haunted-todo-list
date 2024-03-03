@@ -29,7 +29,7 @@ const AddTodoItem: React.FC<AddTodoItemProps> = ({ onSave }) => {
     return (
         <form onSubmit={handleOnSubimit}>
             <div className="flex space-x-4 bg-gray-900 p-4 rounded-lg">
-                <div className="border-2 mt-2 border-pink-300 rounded-lg w-6 h-5"></div>
+                <div className="border-2 mt-2 border-primary rounded-lg w-6 h-5"></div>
                 <div className="flex flex-col w-full">
                     <input
                         type="text"
@@ -46,7 +46,7 @@ const AddTodoItem: React.FC<AddTodoItemProps> = ({ onSave }) => {
                         onChange={handleDescriptionSave}
                     />
                 </div>
-                <button type="submit" className="self-end bg-pink-600 px-2 py-1 rounded text-sm hover:bg-pink-500">Add</button>
+                <button type="submit" className="self-end bg-primary px-2 py-1 rounded text-sm hover:bg-primary-dark">Add</button>
             </div>           
         </form>
     );

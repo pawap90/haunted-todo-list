@@ -14,6 +14,10 @@ export default {
       fontFamily: {
         'sans': ['"Noto Serif"', ...defaultTheme.fontFamily.sans],
         'display': ['"Amatic SC"']
+      },
+      colors: {
+        primary: "#A95A5A",
+        "primary-dark": "#924e4e",
       }
     },
   },
