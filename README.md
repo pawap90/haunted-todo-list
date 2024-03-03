@@ -1,5 +1,5 @@
 # A completely normal TODO List App repo
-Definitely not managed by a victorian ghost child.
+Definitely not managed by a [victorian ghost child](https://github.com/pawap90/ghostbot).
 
 ## Quick Start
 
