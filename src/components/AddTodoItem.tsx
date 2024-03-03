@@ -28,7 +28,7 @@ const AddTodoItem: React.FC<AddTodoItemProps> = ({ onSave }) => {
 
     return (
         <form onSubmit={handleOnSubimit}>
-            <div className="flex space-x-4 bg-slate-900 p-4 rounded-lg">
+            <div className="flex space-x-4 bg-gray-900 p-4 rounded-lg">
                 <div className="border-2 mt-2 border-pink-300 rounded-lg w-6 h-5"></div>
                 <div className="flex flex-col w-full">
                     <input
