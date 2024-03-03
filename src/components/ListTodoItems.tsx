@@ -15,7 +15,7 @@ const ListTodoItems: React.FC<ListTodoItemsProps> = ({ items }) => {
     }
     return (
         <div className="flex flex-col space-y-2">
-            <h2 className="text-xl font-bold text-slate-100">Items</h2>
+            <h2 className="text-3xl font-bold font-display text-slate-100">Items</h2>
             <ul className=" flex flex-col space-y-2">
                 {items.map((item) => (
                     <li key={item.id} className="bg-slate-900 flex space-x-4 rounded-lg p-4">

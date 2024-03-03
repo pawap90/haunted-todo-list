@@ -11,8 +11,8 @@ function App() {
     <div className='container space-y-4 mx-auto mt-16'>
       
       <header>
-        <h1 className='text-3xl font-bold'>ToBoo</h1>
-        <h3 className='text-slate-200'>Welcome to the (haunted) TODO List App</h3>
+        <h1 className='text-5xl font-bold font-display'>ToBoo</h1>
+        <h2 className='text-slate-200'>A completely normal TODO List App. Definitely not managed by a victorian ghost child.</h2>
       </header>
 
       <Separator></Separator>

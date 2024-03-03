@@ -12,7 +12,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        'sans': ['"Open Sans"', ...defaultTheme.fontFamily.sans],
+        'sans': ['"Noto Serif"', ...defaultTheme.fontFamily.sans],
+        'display': ['"Amatic SC"']
       }
     },
   },
